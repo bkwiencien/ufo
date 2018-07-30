@@ -31,7 +31,7 @@ SECRET_KEY = '2q+@hfq&8@o#9l_bh)!@z#yqg-a#%((*qw37!wf9tsi(*7g(@7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["bkwiencien.com",]
 
 
 # Application definition
