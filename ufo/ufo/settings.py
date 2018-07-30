@@ -15,6 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
+#STATIC_ROOT=os.path.join(BASE_DIR,"static/")
+#STATIC_DIR=STATIC_ROOT
+#print("STATIC_ROOT is {}".format(STATIC_DIR))
 print("BASE_DIR is {}".format(BASE_DIR))
 print(TEMPLATE_DIR)
 
@@ -70,6 +73,11 @@ TEMPLATES = [
         },
     },
 ]
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+print("STATICFILES_DIRS = {} ".format(STATICFILES_DIRS[0]))
 
 WSGI_APPLICATION = 'ufo.wsgi.application'
 
